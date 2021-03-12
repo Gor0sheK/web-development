@@ -1,7 +1,9 @@
 <?php
-  header("Content-Type: text/plain");
+ header("Content-Type: text/plain");
+
  $string = $_GET["text"];
- $pattern = '/(\s+)/'; 
+ $pattern = '/(\s+)/i'; 
  $replacement = ' ';
- echo preg_replace($pattern, $replacement, $string);
+ $cls = trim($string)
+ echo preg_replace($pattern, $replacement, $cls);
 ?>
